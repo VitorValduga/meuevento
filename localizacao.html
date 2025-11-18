@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Localização — MeuEvento</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <!-- Overlay de transição -->
+  <div class="page-transition" id="page-transition">
+    <div class="spinner" aria-hidden="true"></div>
+  </div>
+
+  <!-- HEADER UNIFICADO -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html">MeuEvento</a>
+
+      <nav class="main-nav" aria-label="Menu principal">
+        <a href="index.html" class="nav-link">Início</a>
+        <a href="integrantes.html" class="nav-link">Integrantes</a>
+        <a href="localizacao.html" class="nav-link active">Localização</a>
+      </nav>
+
+      <a href="integrantes.html" class="btn-cta">Ver Integrantes</a>
+    </div>
+  </header>
+
+  <main class="integrantes-page fade-in-on-load">
+    <div class="container">
+      <h2 class="pessoas-titulo">Localização</h2>
+
+      <div class="localizacao-card">
+        <h3>Mapa do Local</h3>
+        <p class="muted">Clique na imagem para abrir ampliado. Ou use o mapa interativo abaixo.</p>
+
+        <!-- Imagem do mapa (opcional) -->
+        <a href="mapa.jpg" target="_blank" rel="noopener noreferrer">
+          <img src="mapa.jpg" alt="Mapa da localização" class="mapa-img" style="max-width:900px;">
+        </a>
+
+        <!-- MAPA EMBED: preferível usar em vez da imagem. Cole o src do Google Maps no iframe abaixo -->
+        <div class="map-embed" style="margin-top:18px;">
+          <!-- Exemplo de iframe (se não tiver embed, comente esta tag) -->
+          <!--
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!...SEU_EMBED_AQUI..."
+            width="100%" height="520" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+          -->
+        </div>
+
+        <p style="margin-top:15px; color:rgba(255,255,255,0.85);">
+          Endereço: Perto do Praia.
+        </p>
+      </div>
+    </div>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>

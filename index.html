@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Contagem Regressiva — Praiou 2026</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <!-- Overlay de transição -->
+  <div class="page-transition" id="page-transition">
+    <div class="spinner" aria-hidden="true"></div>
+  </div>
+
+  <!-- HEADER UNIFICADO -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html">Praiou 2026</a>
+
+      <nav class="main-nav" aria-label="Menu principal">
+        <a href="index.html" class="nav-link active">Início</a>
+        <a href="integrantes.html" class="nav-link">Integrantes</a>
+        <a href="localizacao.html" class="nav-link">Localização</a>
+      </nav>
+
+      <a href="integrantes.html" class="btn-cta">Ver Integrantes</a>
+    </div>
+  </header>
+
+  <!-- CONTEÚDO PRINCIPAL -->
+  <main>
+    <section class="hero fade-in-on-load">
+      <div class="container hero-inner" style="display:flex;gap:40px;align-items:flex-start;">
+
+        <!-- LADO ESQUERDO -->
+        <div class="hero-left" style="flex:1;min-width:320px;">
+
+          <h1 class="hero-title">⏳ Contagem Regressiva para 04 de Janeiro de 2026</h1>
+          <p class="hero-sub">Um dia especial está chegando — acompanhe quanto falta!</p>
+
+          <!-- CONTADOR -->
+          <div class="contador" aria-live="polite">
+            <div class="box">
+              <div class="valor" id="dias">0</div>
+              <div class="label">Dias</div>
+            </div>
+            <div class="box">
+              <div class="valor" id="horas">00</div>
+              <div class="label">Horas</div>
+            </div>
+            <div class="box">
+              <div class="valor" id="minutos">00</div>
+              <div class="label">Minutos</div>
+            </div>
+            <div class="box">
+              <div class="valor" id="segundos">00</div>
+              <div class="label">Segundos</div>
+            </div>
+          </div>
+
+          <div class="hero-actions" style="margin-top:18px;">
+            <a href="integrantes.html" class="btn btn-primary">Ver Integrantes</a>
+            <a href="localizacao.html" class="btn btn-ghost">Ver Localização</a>
+          </div>
+
+        </div>
+
+        <!-- LADO DIREITO (INFORMAÇÕES) -->
+        <div class="hero-right" style="width:360px;">
+          <div class="hero-card fade-in-on-load">
+            <h3>Informações</h3>
+            <ul style="text-align:left; margin-top:8px;">
+              <li><strong>Data:</strong> 04/01/2026</li>
+              <li><strong>Local:</strong> Itapema</li>
+              <li><strong>Grupo:</strong> Amigos</li>
+            </ul>
+            <p class="muted">Clique nas abas acima para ver os detalhes.</p>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- CARDS EXTRAS -->
+    <section class="extra-cards fade-in-on-load">
+      <div class="container cards-wrapper">
+
+        <div class="info-card">
+          <h3>📍 Local do Evento</h3>
+          <p>Apartamento do Zamba.</p>
+          <a href="localizacao.html" class="card-btn">Ver no mapa</a>
+        </div>
+
+        <div class="info-card">
+          <h3>🚌 Transporte</h3>
+          <p>Ranger V6 Endemoniada e Meca do VT(A melhor que ta tendo).</p>
+          <a href="#" class="card-btn">Mais detalhes</a>
+        </div>
+
+        <div class="info-card">
+          <h3>🎵 Playlist</h3>
+          <p>Foi enviada no grupo do whatsapp adicione as musicas la.</p>
+          <a href="#" class="card-btn">Ouvir Playlist</a>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- RODAPÉ -->
+  <footer class="site-footer">
+    <div class="container">
+      <p>© <span id="ano"></span> MeuEvento — Feito com ❤️</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
